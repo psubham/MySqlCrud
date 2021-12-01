@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Capital</name>
+    </assembly>
+    <members>
+        <member name="M:Capital.Controllers.EmployeeController.#ctor(Microsoft.Extensions.Logging.ILogger{Capital.Controllers.EmployeeController},Capital.Models.EmployeeContext)">
+            <summary>
+            CRUD Employee 
+            </summary>
+        </member>
+        <member name="M:Capital.Controllers.EmployeeController.Get">
+            <summary>
+            Display all the records
+            </summary>
+        </member>
+        <member name="M:Capital.Controllers.EmployeeController.Post(Capital.Models.Employee)">
+            <summary>
+            Insert Single Records
+            </summary>
+            <param name="emp"> employee object</param>
+        </member>
+        <member name="M:Capital.Controllers.EmployeeController.BulkEntry(System.Collections.Generic.List{Capital.Models.Employee})">
+            <summary>
+            Insert Bulk Records
+            </summary>
+            <param name="emp"> employee object</param>
+        </member>
+        <member name="M:Capital.Controllers.EmployeeController.BulkUpdate(System.Boolean)">
+            <summary>
+            Update Status
+            </summary>
+            <param name="status"> Active or Not</param>
+        </member>
+        <member name="T:Capital.Exceptions.ErrorDetail">
+            <summary>
+            Adds common error 
+            </summary>
+        </member>
+        <member name="M:Capital.Exceptions.ExceptionMiddlewareExtension.UseGlobalExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Logging.ILogger{Capital.Startup})">
+            <summary>
+            Adds a middleware to your web application pipeline to handle exception globally.
+            </summary>
+            <param name="app">Application Builder.</param>
+            <param name="logger">Logger.</param>
+        </member>
+        <member name="T:Capital.MiddleWare.ResponseTimeMiddleware">
+            <summary>
+            Adds a middleware to your web application pipeline to cslculate response time.
+            </summary>
+        </member>
+        <member name="M:Capital.MiddleWare.ResponseTimeMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Capital.MiddleWare.ResponseTimeMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Capital.MiddleWare.MyMiddlewareExtensions">
+            <summary>
+            use middleware for runtime calculation
+            </summary>
+        </member>
+        <member name="T:Capital.Models.Employee">
+            <summary>
+            Employe DTO
+            </summary>
+        </member>
+    </members>
+</doc>
